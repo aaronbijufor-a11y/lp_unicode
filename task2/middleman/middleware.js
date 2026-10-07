@@ -11,7 +11,7 @@ const protect = (req, res, next) => {
 
   try {
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
-    req.userId = decoded.id; 
+    req.userId = decoded.id;
     next();
   } catch (error) {
     return res.status(401).json({ message: "Invalid or expired token" });
@@ -19,3 +19,5 @@ const protect = (req, res, next) => {
 };
 
 module.exports = { protect };
+
+//middleware is the middle person btwn client and server. It is used to verify the token and check if the user is authorized to access the requested resource. If the token is valid, it allows the request to proceed to the next middleware or route handler. If not, it responds with an error message indicating that the user is not authorized.
