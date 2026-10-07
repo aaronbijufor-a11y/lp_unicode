@@ -107,7 +107,7 @@ function areAllOrdersValid(orders) {
 // console.log(getHighestValueOrder());
 // console.log(hasHighValueOrder(5000));
 // console.log(areAllOrdersValid(orders));
-
+//commented out the above console logs to avoid cluttering the output
 function getCustomer(id, callback) {
   setTimeout(() => {
     let customer = customers.find((cust) => cust.id == id);
