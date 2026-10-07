@@ -20,4 +20,7 @@ const protect = (req, res, next) => {
 
 module.exports = { protect };
 
-//middleware is the middle person btwn client and server. It is used to verify the token and check if the user is authorized to access the requested resource. If the token is valid, it allows the request to proceed to the next middleware or route handler. If not, it responds with an error message indicating that the user is not authorized.
+//middleware is the middle person btwn client and server. 
+// It is used to verify the token and check if the user is authorized to access the requested resource. 
+// If the token is valid, it allows the request to proceed to the next middleware or route handler. 
+// If not, it responds with an error message indicating that the user is not authorized.
